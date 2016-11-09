@@ -11,9 +11,8 @@ import CommentEntry from './commententry';
               </li>
             )
           })}
-          <li className = "media"> {
-            <CommentEntry />
-          }
+          <li className = "media">
+            <CommentEntry onPost={this.props.onPost} />
           </li>
         </ul>
       )
